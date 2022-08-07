@@ -4,7 +4,7 @@ const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 const Story = require('../models/Story')
 
-// @desc    Login/Landing page
+// @desc    Login/Landing Page
 // @route   GET /
 router.get('/', ensureGuest, (req, res) => {
   res.render('login', {
